@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (void)
+int main(void)
 {
-	char str[] = "\"Programming is like builing a multilingual puzzle\n\"";
+	char str[] = "\"Programming is like builing a multilingual puzzle\n";
 
 	puts(str);
 
-	return(0);
+	return (0);
 }
