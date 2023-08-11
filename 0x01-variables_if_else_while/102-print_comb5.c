@@ -12,6 +12,7 @@ int main(void)
 	int num2;
 	int num3;
 	int num4;
+	int check = 0;
 
 	for (num1 = '0'; num1 <= '9'; num1++)
 	{
@@ -21,7 +22,24 @@ int main(void)
 			{
 				for (num4 = '0'; num4 <= '9'; num4++)
 				{
-					if (num1 <= num3 && num2 < num4)
+					if (num1 < num3)
+					{
+						check = 1;
+					} else if (num1 == num3)
+					{
+						if (num2 < num4)
+						{
+							check = 1;
+						} else
+						{
+							check = 0;
+						}
+					} else
+					{
+						check = 0;
+					}
+
+					if (check == 1)
 					{
 					putchar(num1);
 					putchar(num2);
