@@ -3,7 +3,9 @@
 #include <time.h>
 
 /**
- * main - determines whether the last digit of the  number is positive, negative, or zero.
+ * main -
+ * determines whether the last digit of
+ * the  number is positive, negative, or zero.
  *
  * Return: 0
  */
