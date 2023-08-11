@@ -12,7 +12,6 @@ int main(void)
 	int num2;
 	int num3;
 	int num4;
-	int check = 0;
 
 	for (num1 = '0'; num1 <= '9'; num1++)
 	{
