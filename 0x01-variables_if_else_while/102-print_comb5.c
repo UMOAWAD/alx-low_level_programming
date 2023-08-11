@@ -27,16 +27,10 @@ int main(void)
 						check = 1;
 					} else if (num1 == num3)
 					{
-						if (num2 < num4)
-						{
-							check = 1;
-						} else
-						{
-							check = 0;
-						}
-					} else
+					if (num2 < num4)
 					{
-						check = 0;
+						check = 1;
+					}
 					}
 
 					if (check == 1)
