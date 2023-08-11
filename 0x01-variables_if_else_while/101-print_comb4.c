@@ -22,18 +22,18 @@ int main(void)
 				{
 					if (num2 < num3)
 					{
-						putchar(num1);
-						putchar(num2);
-						putchar(num3);
+					putchar(num1);
+					putchar(num2);
+					putchar(num3);
 
-						if (num1 == '7' && num2 == '8' && num3 == '9')
-						{
-							putchar('\n');
-						} else
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (num1 == '7' && num2 == '8' && num3 == '9')
+					{
+					putchar('\n');
+					} else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 				} else
 				{
