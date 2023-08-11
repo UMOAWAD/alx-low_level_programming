@@ -16,7 +16,7 @@ int main(void)
 
 		if (ch == 'a')
 		{
-			putchat('\n');
+			putchar('\n');
 		}
 	}
 
