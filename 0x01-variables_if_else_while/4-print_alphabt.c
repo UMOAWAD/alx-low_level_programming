@@ -15,12 +15,14 @@ int main(void)
 		if (ch == 'e' || ch == 'q')
 		{
 
-		} else if (ch == 'z')
-		{
-			putchar(ch + "\n");
 		} else
 		{
 			putchar(ch);
+		}
+		
+		if (ch == 'z')
+		{
+			putchar('\n');
 		}
 	}
 	return (0);
