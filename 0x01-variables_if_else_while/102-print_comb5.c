@@ -24,14 +24,6 @@ int main(void)
 				{
 					if (num1 < num3 || (num1 == num3 && num2 < num4))
 					{
-						check = 1;
-					} else
-					{
-						check = 0;
-					}
-
-					if (check == 1)
-					{
 					putchar(num1);
 					putchar(num2);
 					putchar(' ');
@@ -45,7 +37,7 @@ int main(void)
 					{
 						putchar(',');
 						putchar(' ');
-						}
+					}
 					}
 				}
 			}
