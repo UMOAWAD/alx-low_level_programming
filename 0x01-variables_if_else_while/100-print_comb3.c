@@ -17,7 +17,8 @@ int main(void)
 		{
 			if (num1 >= num2)
 			{
-			} else
+			}
+			else
 			{
 				putchar(num1);
 				putchar(num2);
