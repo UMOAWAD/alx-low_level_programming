@@ -8,16 +8,15 @@
 
 int main(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
+	char alphabet;
 
-	for (i = 0; i < 26; i++)
+	for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 	{
-		if (i == 27)
+		if (alphabet == 'z')
 		{
-			putchar(alphabet[i] + "\n");
+			putchar(alphabet+ "\n");
 		} else {
-			putchar(alphabet[i]);
+			putchar(alphabet);
 		}
 	}
 	return (0);
