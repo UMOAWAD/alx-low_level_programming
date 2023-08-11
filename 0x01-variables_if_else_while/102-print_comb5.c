@@ -34,6 +34,9 @@ int main(void)
 					{
 						check = 0;
 					}
+					} else
+					{
+						check = 0;
 					}
 
 					if (check == 1)
