@@ -16,7 +16,7 @@ int main(void)
 		
 		if (alphabet == 'z')
 		{
-			putchar(alphabet+ '\n');
+			putchar('\n');
 		}
 	}
 	return (0);
