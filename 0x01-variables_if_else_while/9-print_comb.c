@@ -17,10 +17,11 @@ int main(void)
 		if (num1 == '9')
 		{
 			putchar('\n');
-		} else {
+		} else
+		{
 			putchar(',');
 			putchar(' ');
-		}		
+		}
 	}
 
 	return (0);
