@@ -23,8 +23,6 @@ int main(void)
 				{
 					if (num1 <= num3 && num2 < num4)
 					{
-					} else if (num2 <= num3)
-					{
 					putchar(num1);
 					putchar(num2);
 					putchar(' ');
