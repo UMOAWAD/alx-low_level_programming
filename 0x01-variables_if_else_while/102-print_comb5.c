@@ -30,6 +30,9 @@ int main(void)
 					if (num2 < num4)
 					{
 						check = 1;
+					} else
+					{
+						check = 0;
 					}
 					}
 
