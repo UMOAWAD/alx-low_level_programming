@@ -22,18 +22,9 @@ int main(void)
 			{
 				for (num4 = '0'; num4 <= '9'; num4++)
 				{
-					if (num1 < num3)
+					if (num1 < num3 || (num1 == num3 && num2 < num4))
 					{
 						check = 1;
-					} else if (num1 == num3)
-					{
-					if (num2 < num4)
-					{
-						check = 1;
-					} else
-					{
-						check = 0;
-					}
 					} else
 					{
 						check = 0;
