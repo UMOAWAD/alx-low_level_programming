@@ -14,6 +14,11 @@ int main(void)
 	for (i = 0; i < 9; i++)
 	{
 		putchar(put[i]);
+
+		if (i == 8)
+		{
+			putchar('\n');
+		}
 	}
 
 	return (0);
