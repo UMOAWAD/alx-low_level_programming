@@ -13,5 +13,10 @@ void print_alphabet(void)
 	for  (c = 'a'; c <= 'z'; c++)
 	{
 		_putchar(c);
+
+		if (c == 'z')
+		{
+			_putchar('\n');
+		}
 	}
 }
