@@ -11,7 +11,7 @@ int main(void)
 	char a = '_';
 	char b = 'p';
 	char c = 'u';
-	char d = 'r';
+	char d = 't';
 	char e = 'c';
 	char f = 'h';
 	char g = 'a';
