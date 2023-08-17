@@ -4,7 +4,8 @@
 /**
  * _islower - prints 1 if c is parameter is lowercase
  *
- * int c - is a letter
+ * @c: The letter to check
+ *
  * Return: 0 or 1
  */
 
