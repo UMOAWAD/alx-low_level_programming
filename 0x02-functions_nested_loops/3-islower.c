@@ -4,6 +4,7 @@
 /**
  * _islower - prints 1 if c is parameter is lowercase
  *
+ * int c - is a letter
  * Return: 0 or 1
  */
 
