@@ -4,7 +4,7 @@
 /**
  * islower - prints 1 if c is lowercase
  *
- * Return: 0 or 1
+ * Return: 0
  */
 
 int _islower(int c)
@@ -16,4 +16,6 @@ int _islower(int c)
 	{
 		_putchar('0');
 	}
+
+	return (0);
 }
