@@ -9,7 +9,7 @@
  * Return: 0 or 1
  */
 
-int isalpha(int c)
+int _isalpha(int c)
 {
 	if (isalpha(c))
 	{
