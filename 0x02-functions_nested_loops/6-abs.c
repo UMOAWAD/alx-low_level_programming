@@ -4,12 +4,10 @@
 /**
  * _abs - Calculates the absolute value of an integer.
  *
- * Retrun: 0
+ * Retrun: abs
  */
 
 int _abs(int i)
 {
-	abs(i);
-
-	return (0);
+	return abs(i);
 }
