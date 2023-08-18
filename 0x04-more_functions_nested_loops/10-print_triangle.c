@@ -9,7 +9,7 @@
 
 void print_triangle(int size)
 {
-	int i, c, x;
+	int x, y, z;
 
 	if (size <= 0)
 	{
@@ -17,14 +17,14 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for (i = 0; i < size; i++)
+		for (x = 0; x < size; x++)
 		{
-			for (c = size - i; c >= 0; c--)
+			for (y = size - x; y > 1; y--)
 			{
 				_putchar(32);
 			}
 
-			for (x = i; x >= 0; x--)
+			for (z = 0; z <= x; z++)
 			{
 				_putchar(35);
 			}
