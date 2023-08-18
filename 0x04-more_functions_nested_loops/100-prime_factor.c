@@ -9,7 +9,7 @@
 int main(void)
 {
 	long long int i = 612852475143;
-	int l;
+	long int l;
 
 	for (l = i / 2; l >= 2; l--)
 	{
@@ -25,7 +25,7 @@ int main(void)
 		}
 	}
 
-	printf("%d\n", l);
+	printf("%li\n", l);
 
 	return (0);
 }
