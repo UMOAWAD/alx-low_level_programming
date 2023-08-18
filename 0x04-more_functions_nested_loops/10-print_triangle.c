@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangle.
- *
- * @size: the size of the triangle.
- *
- * Return: triangle.
- */
+  * print_triangle - Prints a triangle of squares according parameter
+  * @size: The size of the squares triangle
+  *
+  * Return: empty
+  */
 
 void print_triangle(int size)
 {
