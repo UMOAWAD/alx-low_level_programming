@@ -13,13 +13,14 @@
 void rev_array(int *a, int n)
 {
 	int i, x;
-	int *b;
-	int *c;
+	int *b = a;
 
 	for (i = 0; i < n; i++)
 	{
 		a[i] = b[i];
 	}
+
+	int c[i];
 
 	for (x = 0; x < n; x++)
 	{
