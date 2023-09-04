@@ -29,11 +29,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		i = 1;
+		s1 = "";
 	}
 	else if (s2 == NULL)
 	{
-		x = 1;
+		s2 = "";
 	}
 
 	s = malloc(sizeof(char) * (i + x) + 1);
