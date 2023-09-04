@@ -21,5 +21,10 @@ char *create_array(unsigned int size, char c)
 
 	str[0] = c;
 
+	if (size == 0)
+	{
+		return ('\0');
+	}
+
 	return (str);
 }
