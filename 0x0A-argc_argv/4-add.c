@@ -23,21 +23,23 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		e = argv[i];
-
-		for (k = 0; k < strlen(e); k++)
+		for (i = 1; i < argc; i++)
 		{
-			if (e[k] < 48 || e[k] > 57)
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
+			e = argv[i];
 
-		j += atoi(e);
+			for (k = 0; k < strlen(e); k++)
+			{
+				if (e[k] < 48 || e[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+
+			j += atoi(e);
+		}
 	}
 
 	printf("%d\n", j);
