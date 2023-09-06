@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 	unsigned int j = 0, k;
 	char *e;
 
-	if (argc == 1)
+	if (argc <= 1)
 	{
-		printf("%d\n", 0);
+		printf("0\n");
 	}
 
 	for (i = 1; i < argc; i++)
