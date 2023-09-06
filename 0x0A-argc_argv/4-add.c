@@ -15,7 +15,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j = 0, k;
+	int i, j = 0;
+	unsigned int k;
 	char *e;
 
 	if (argc == 1)
