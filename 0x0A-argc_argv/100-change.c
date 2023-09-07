@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	int i25 = i / 25, i10 = i / 10, i5 = i / 5, i2 = i / 2;
 	int i_25 = i % 25, i_10 = i_25 % 10, i_5 = i_10 % 5, i_2 = i_5 % 2;
 
-	if (argc != 2)
+	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
