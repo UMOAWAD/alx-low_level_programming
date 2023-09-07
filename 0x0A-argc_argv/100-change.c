@@ -55,7 +55,18 @@ int main(int argc, char **argv)
 				}
 				else if (i_25 > 5)
 				{
-					change = i25 + (i_25 % 5);
+					if ((i_25 % 5) >= 2)
+					{
+						change = i25 + 1 + 1 + ((i_25 % 5) % 2);
+					}
+					else
+					{
+						change = i25 + 1 + 1;
+					}
+				}
+				else if (i_25 >= 2)
+				{
+					change = i25 + 1 + (i_25 % 2);
 				}
 				else
 				{
