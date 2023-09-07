@@ -38,13 +38,13 @@ int main(int argc, char **argv)
 			}
 			else
 			{
-				if (i_25 > 10)
+				if (i_25 >= 10)
 				{
-					if (i_10 > 5)
+					if (i_10 >= 5)
 					{
 						change = i25 + i_25 / 10 + i_10 / 5 + i_5;
 					}
-					else if ( i_10 > 2)
+					else if ( i_10 >= 2)
 					{
 						change = i25 + i_25 / 10 + i_10 / 2 + i_2;
 					}
@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 						change = i25 + i_25 / 10 + i_10;
 					}
 				}
-				else if (i_25 > 5)
+				else if (i_25 >= 5)
 				{
 					if ((i_25 % 5) >= 2)
 					{
