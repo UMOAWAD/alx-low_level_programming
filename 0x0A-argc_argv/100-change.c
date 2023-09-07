@@ -14,7 +14,8 @@
 
 int main(int argc, char **argv)
 {
-	int i = atoi(argv[1]), change;
+	int i = atoi(argv[1]);
+	int change;
 	int i25 = i / 25, i10 = i / 10, i5 = i / 5;
 	int i_25 = i % 25, i_10 = i_25 % 10, i_5 = i_10 % 5, i_2 = i_5 % 2;
 
@@ -46,6 +47,7 @@ int main(int argc, char **argv)
 					else if ( i_10 > 2)
 					{
 						change = i25 + i_25 / 10 + i_10 / 2 + i_2;
+					}
 					else
 					{
 						change = i25 + i_25 / 10 + i_10;
@@ -87,7 +89,7 @@ int main(int argc, char **argv)
 		{
 			change = i5;
 		}
-		}
+	}
 
 	printf ("%d\n", change);
 
