@@ -16,8 +16,7 @@ void *malloc_checked(unsigned int b)
 
 	if (alloc == NULL)
 	{
-		printf("98\n");
-		return (NULL);
+		exit(98);
 	}
 
 	return (alloc);
