@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 {
 	int i = atoi(argv[1]);
 	int change;
-	int i25 = i / 25, i10 = i / 10, i5 = i / 5;
+	int i25 = i / 25, i10 = i / 10, i5 = i / 5, i2 = i / 2;
 	int i_25 = i % 25, i_10 = i_25 % 10, i_5 = i_10 % 5, i_2 = i_5 % 2;
 
 	if (argc != 2)
@@ -83,15 +83,45 @@ int main(int argc, char **argv)
 		}
 		else if (i > 5)
 		{
-			change = i5 + 1;
+			if (i % 5 == 0)
+			{
+				change = i5;
+			}
+			else if (i % 5 > 2)
+			{
+				if ((i % 5) % 2 == 0)
+				{
+					change = i5 + (i % 5) / 2;
+				}
+				else
+				{
+					change = i5 + (i % 5) /2 + 1;
+				}
+			}
+			else
+			{
+				change = i5 + i % 5;
+			}
+		}
+		else if (i > 2)
+		{
+			if (i % 2 == 0)
+			{
+				change = i2;
+			}
+			else
+			{
+				change = i2 + 1;
+			}
+
 		}
 		else
 		{
-			change = i5;
+			change = i;
 		}
-	}
 
-	printf ("%d\n", change);
+		printf ("%d\n", change);
+	}
 
 	return (0);
 }
