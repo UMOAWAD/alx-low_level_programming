@@ -33,8 +33,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i2 = 0; s2[i2] != '\0'; i2++)
 	{
 	}
-
-	i2--;
 	
 	if (i2 <= n)
 	{
