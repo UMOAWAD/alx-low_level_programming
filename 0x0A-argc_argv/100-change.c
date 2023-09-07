@@ -73,7 +73,7 @@ int main(int argc, char **argv)
 			{
 				if (i % 10 > 5)
 				{
-					change = i10 + 1 + ((i % 10) % 5);
+					change = i10 + ((i % 10) % 5);
 				}
 				else
 				{
