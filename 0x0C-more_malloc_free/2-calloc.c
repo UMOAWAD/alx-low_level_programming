@@ -22,16 +22,16 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
+	ar = malloc(nmemb * size);
+
+	if (ar == NULL)
+	{
+		return NULL;
+	}}
+
 	for (i = 0; i < nmemb; i++)
 	{
-		ar[i] = malloc(sizeof(size));
-		
-		if (a[i] == NULL)
-		{
-			return (NULL);
-		}
-
-		a[i] = 0;
+		ar[i] = 0;
 	}
 
 	return (ar);
