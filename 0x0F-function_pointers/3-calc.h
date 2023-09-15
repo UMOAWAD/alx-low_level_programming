@@ -24,6 +24,6 @@ int op_div(int a, int b);
 
 int op_mod(int a, int b);
 
-int (*get_op_fun(char *))(int, int);
+int (*get_op_func(char *))(int, int);
 
 #endif

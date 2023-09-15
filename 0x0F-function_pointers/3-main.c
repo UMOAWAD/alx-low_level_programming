@@ -18,7 +18,6 @@ int main(int argc, char **argv)
 {
 	int a;
 	int b;
-	int op;
 	char *ops;
 	int result;
 
@@ -30,7 +29,6 @@ int main(int argc, char **argv)
 
 	a = atoi(argv[1]);
 	b = atoi( argv[3]);
-	op = atoi(argv[2]);
 	ops = argv[2];
 
 	if (*ops != '+' && *ops != '-' && *ops != '*' && *ops != '/' && *ops != '%')
