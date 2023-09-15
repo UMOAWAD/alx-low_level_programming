@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "calc.h"
+#include <string.h>
 
 /**
  * get_op_func - Selects the right function.
@@ -12,7 +13,7 @@ int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
-		{"+", op_sub},
+		{"-", op_sub},
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
@@ -21,12 +22,12 @@ int (*get_op_func(char *s))(int, int)
 
 	int i = 0;
 
-	while(s != ops[i].op && i < 6)
+	while(strcmp(s, ops[i].op) && i < 5)
 	{
 		i++;
 	}
 
-	if (i == 6)
+	if (i == 5)
 	{
 		return NULL;
 	}
