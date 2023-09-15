@@ -6,6 +6,8 @@
 /**
  * get_op_func - Selects the right function.
  *
+ * @s: The operator.
+ *
  * Return: A pointer to the selected function.
  */
 
@@ -22,14 +24,14 @@ int (*get_op_func(char *s))(int, int)
 
 	int i = 0;
 
-	while(strcmp(s, ops[i].op) && i < 5)
+	while (strcmp(s, ops[i].op) && i < 5)
 	{
 		i++;
 	}
 
 	if (i == 5)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	return (ops[i].f);
