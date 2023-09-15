@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 
 	int i = 0;
 
-	while(s != ops[i][0] && i < 6)
+	while(s != ops[i].op && i < 6)
 	{
 		i++;
 	}
@@ -31,5 +31,5 @@ int (*get_op_func(char *s))(int, int)
 		return NULL;
 	}
 
-	return (ops[i][1]);
+	return (ops[i].f);
 }

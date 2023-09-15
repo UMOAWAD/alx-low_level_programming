@@ -7,20 +7,20 @@
  *
  * @calc: a pointer to the function necessary.
  *
- * @num1: The first integer.
+ * @argc: The length of the arguments array.
  *
- * @operator: The operator.
+ * @argv: The arguments array.
  *
- * @num2: the second integer.
- *
- * Return: 0;
+ * Return: 0.
  */
 
 int main(int argc, char **argv)
 {
 	int a;
 	int b;
-	char op;
+	int op;
+	char *ops;
+	int result;
 
 	if (argc != 4)
 	{
@@ -30,21 +30,22 @@ int main(int argc, char **argv)
 
 	a = atoi(argv[1]);
 	b = atoi( argv[3]);
-	op = argv[2];
+	op = atoi(argv[2]);
+	ops = argv[2];
 
-	if (op != "+" || op != "-" || op != "*" || op != "/" || op != "%")
+	if (op != '+' || op != '-' || op != '*' || op != '/' || op != '%')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((op == "/" || op == "%") && b == 0)
+	if ((op == '/' || op == '%') && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	int result = get_op_func(op)(a, b);
+	result = get_op_func(ops)(a, b);
 
 	printf("%d\n", result);
 
