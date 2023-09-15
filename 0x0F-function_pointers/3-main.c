@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
-#include "3-op_functions.c"
-#include "3-get_op_func.c"
 
 /*
  * main - performs simple operations.
@@ -35,13 +33,13 @@ int main(int argc, char **argv)
 	op = atoi(argv[2]);
 	ops = argv[2];
 
-	if (op != '+' || op != '-' || op != '*' || op != '/' || op != '%')
+	if (*ops != '+' && *ops != '-' && *ops != '*' && *ops != '/' && *ops != '%')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((op == '/' || op == '%') && b == 0)
+	if ((*ops == '/' || *ops == '%') && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
