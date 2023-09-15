@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 	b = atoi(argv[3]);
 	ops = argv[2];
 
-	if (!get_op_func(ops))
+	if (*ops != '+' && *ops != '-' && *ops != '*' && *ops != '/' && *ops != '%')
 	{
 		printf("Error\n");
 		exit(99);

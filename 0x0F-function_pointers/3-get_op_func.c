@@ -31,7 +31,7 @@ int (*get_op_func(char *s))(int, int)
 
 	if (i == 5)
 	{
-		return (NULL);
+		return (0);
 	}
 
 	return (ops[i].f);
